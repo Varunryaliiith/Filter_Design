@@ -34,4 +34,4 @@ plt.legend(loc='upper left')
 
 # Display the plot
 plt.grid(True)
-plt.savefig("Pole_Zero_plt.png")
+plt.savefig("../figs/Pole_Zero_plt.png")

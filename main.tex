@@ -142,7 +142,7 @@ we get $N\geq 4$ and $0.278 \leq \epsilon \leq 0.61$\\
 \newpage
 The below code plots \eqref{eq:mag_freq_response} for different values of $\epsilon$ .
 \begin{lstlisting}
-https://github.com/dhanushnayakh03/EE1205/tree/main/Audio_%20Filter/codes/plot1.py
+https://github.com/Varunryaliiith/Filter_Design/blob/main/codes/plot1.py
 \end{lstlisting}
 \begin{figure}[H]
 \centering
@@ -176,14 +176,14 @@ where $k$ is the index of the pole and \\
 
 The below code computes the values of $s_k$ and stores it in a text file. 
 \begin{lstlisting}
-https://github.com/dhanushnayakh03/EE1205/blob/main/Filter_Design/codes/sk_gen.c
+https://github.com/Varunryaliiith/Filter_Design/blob/main/codes/sk_gen.c
 \end{lstlisting}
 The poles obtained are formulated in the table below.
 \input{tables/sk_tab}
 
 The below code plots the pole-zero plot.
 \begin{lstlisting}
-https://github.com/dhanushnayakh03/EE1205/blob/main/Filter_Design/codes/plot1.py
+https://github.com/Varunryaliiith/Filter_Design/blob/main/codes/plot_zero_plt.py
 \end{lstlisting}
 \begin{figure}[H]
 \centering
@@ -194,7 +194,7 @@ https://github.com/dhanushnayakh03/EE1205/blob/main/Filter_Design/codes/plot1.py
 The poles in the left half of the plane are considered in the design as we intend to design a stable system.\\
 Therefore the magnitude response is written as :- 
 \begin{align}
-    H_{a,LP}(s_L) &= \frac{G_{LP}}{\brak{s_L-s_5}\brak{s_L-s_6}\brak{s_L-s_7}\brak{s_L-s_8}}
+    H_{a,LP}(s_L) &= \frac{G_{LP}}{\brak{s_L-s_7}\brak{s_L-s_8}\brak{s_L-s_9}\brak{s_L-s_10}\brak{s_L-s_11}\brak{s_L-s_12}}
 \end{align}
 where $G_{LP}$ is the gain of the Low pass filter. Refer to \tabref{tab:values poles sk} for $s_k$ values.\\
 

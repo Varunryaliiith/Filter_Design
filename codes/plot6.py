@@ -8,8 +8,8 @@ s, s_L, z, omega = symbols('s s_L z omega')
 # Given transfer function
 H_s_L = 0.4166 / (s_L**4 + 1.3022*s_L**3 + 1.84781*s_L**2 + 1.1651*s_L + 0.4350)
 
-Omega_0_val = 0.644
-B_val = 0.1107
+Omega_0_val = 0.488
+B_val = 0.1171
 
 
 s_L_expr = (s**2 + Omega_0_val**2) / (B_val * s)
@@ -35,4 +35,4 @@ plt.xlabel(r'$\omega/\pi$')
 plt.ylabel(r'$|H_{d,BP}(\omega)|$')
 plt.title("Digital Band Pass Filter")
 plt.grid(True)
-plt.savefig("Digital_BPF.png")
+plt.savefig("../figs/Digital_BPF.png")

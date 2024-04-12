@@ -50,4 +50,5 @@ plt.grid()
 
 
 plt.tight_layout()
+plt.savefig('../figs/LPF_FIR.png')
 plt.show()

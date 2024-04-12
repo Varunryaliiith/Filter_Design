@@ -2,15 +2,17 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # Given parameters
-s1 = -0.1907 - 1.0322j
-s2 = -0.4604 - 0.4276j
-s3 = -0.4604 + 0.4276j
-s4 = -0.1907 + 1.0322j
+s1 =-0.2300 + 0.7436j
+s2 =-0.3142 - 0.2722j 
+s3 =-0.3142 + 0.2722j 
+s4 =-0.2300 + 0.7436j 
+s5 =-0.0842 + 1.0157j
+s6 =0.0842 + 1.0157j
 epsilon = 0.3
 Omega_Lp = 1
 
 # Generate the denominator polynomial
-den = np.poly([s1, s2, s3, s4])
+den = np.poly([s1, s2, s3, s4,s5,s6])
 
 # Define frequency range
 w = np.arange(0, 2.01, 0.01)
@@ -48,5 +50,5 @@ plt.ylabel('|H_{a,LP}($\Omega$)|')
 plt.legend()
 plt.grid(True)
 plt.ylim(0, 1.1)  # Set the y-axis limits from 0 to 2
-plt.savefig("Design_vs_Specification.png")
+plt.savefig("../figs/Design_vs_Specification.png")
 
